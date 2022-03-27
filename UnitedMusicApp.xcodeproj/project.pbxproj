@@ -58,13 +58,29 @@
 			children = (
 				28D48C5727F07E7A00E116EB /* AppDelegate.swift */,
 				28D48C5927F07E7A00E116EB /* SceneDelegate.swift */,
-				28D48C5B27F07E7A00E116EB /* ViewController.swift */,
-				28D48C5D27F07E7A00E116EB /* Main.storyboard */,
+				28D48C6C27F07F9000E116EB /* ViewControllers */,
+				28D48C6B27F07F8800E116EB /* Storyboards */,
 				28D48C6027F07E7C00E116EB /* Assets.xcassets */,
-				28D48C6227F07E7C00E116EB /* LaunchScreen.storyboard */,
 				28D48C6527F07E7C00E116EB /* Info.plist */,
 			);
 			path = UnitedMusicApp;
+			sourceTree = "<group>";
+		};
+		28D48C6B27F07F8800E116EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				28D48C5D27F07E7A00E116EB /* Main.storyboard */,
+				28D48C6227F07E7C00E116EB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		28D48C6C27F07F9000E116EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D48C5B27F07E7A00E116EB /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
