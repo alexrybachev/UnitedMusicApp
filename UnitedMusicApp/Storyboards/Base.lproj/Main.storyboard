@@ -88,21 +88,66 @@
             </objects>
             <point key="canvasLocation" x="2529" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--About Instrument View Controller-->
         <scene sceneID="XDh-k9-Lxb">
             <objects>
-                <viewController id="bqB-rT-R0y" sceneMemberID="viewController">
+                <viewController id="bqB-rT-R0y" customClass="AboutInstrumentViewController" customModule="UnitedMusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6v-Kd-Q6B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJu-xP-ZkF">
+                                <rect key="frame" x="20" y="160" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WJu-xP-ZkF" secondAttribute="height" multiplier="1:1" id="qwK-ve-EaH"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qYa-ye-Yny">
+                                <rect key="frame" x="20" y="554" width="374" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inZ-zk-nUC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.1950377576" green="0.098880531450000003" blue="0.78263369469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HP-Pj-AWa">
+                                        <rect key="frame" x="0.0" y="40.5" width="374" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxE-Wd-acn">
+                                        <rect key="frame" x="0.0" y="84.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="T0j-6U-mhI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WJu-xP-ZkF" firstAttribute="top" secondItem="T0j-6U-mhI" secondAttribute="top" constant="20" id="5Jt-Xy-NkA"/>
+                            <constraint firstItem="T0j-6U-mhI" firstAttribute="trailing" secondItem="qYa-ye-Yny" secondAttribute="trailing" constant="20" id="O5b-EC-VH4"/>
+                            <constraint firstItem="qYa-ye-Yny" firstAttribute="top" secondItem="WJu-xP-ZkF" secondAttribute="bottom" constant="20" id="PR7-Uc-xmO"/>
+                            <constraint firstItem="qYa-ye-Yny" firstAttribute="leading" secondItem="T0j-6U-mhI" secondAttribute="leading" constant="20" id="VQc-g2-8xg"/>
+                            <constraint firstItem="T0j-6U-mhI" firstAttribute="trailing" secondItem="WJu-xP-ZkF" secondAttribute="trailing" constant="20" id="ax2-FV-UxY"/>
+                            <constraint firstItem="WJu-xP-ZkF" firstAttribute="leading" secondItem="T0j-6U-mhI" secondAttribute="leading" constant="20" id="lm3-7L-MOl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GFl-4G-GR9"/>
+                    <connections>
+                        <outlet property="instrumentCost" destination="inZ-zk-nUC" id="5oI-zs-Zaw"/>
+                        <outlet property="instrumentDescription" destination="FxE-Wd-acn" id="GJi-mw-vIZ"/>
+                        <outlet property="instrumentImage" destination="WJu-xP-ZkF" id="eou-Vy-naL"/>
+                        <outlet property="instrumentTitle" destination="2HP-Pj-AWa" id="JnZ-4j-jfJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yli-zl-eQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317" y="33"/>
+            <point key="canvasLocation" x="3315.9420289855075" y="32.8125"/>
         </scene>
         <!--Каталог-->
         <scene sceneID="bB0-tA-M7z">
