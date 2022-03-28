@@ -30,7 +30,12 @@ class CategoryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         let category = categoryList[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = category.category
+        
+        let font = UIFont.boldSystemFont(ofSize: 18)
+        let attributes = [NSAttributedString.Key.font: font]
+        content.attributedText = NSAttributedString(string: category.category, attributes: attributes)
+        
+//        content.text = category.category
         content.secondaryText = String(category.instrument.count)
         cell.contentConfiguration = content
         
