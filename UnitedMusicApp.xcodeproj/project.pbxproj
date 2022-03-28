@@ -16,6 +16,7 @@
 		28D48C6427F07E7C00E116EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D48C6227F07E7C00E116EB /* LaunchScreen.storyboard */; };
 		28D48C6F27F0813400E116EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C6E27F0813400E116EB /* DataManager.swift */; };
 		28D48C7127F0813E00E116EB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C7027F0813E00E116EB /* Model.swift */; };
+		417DD6F127F228EA00C6AA81 /* ListOfToolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */; };
 		4190833827F1082800EC6331 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190833727F1082800EC6331 /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		28D48C6527F07E7C00E116EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28D48C6E27F0813400E116EB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28D48C7027F0813E00E116EB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfToolsTableViewController.swift; sourceTree = "<group>"; };
 		4190833727F1082800EC6331 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				28D48C5B27F07E7A00E116EB /* ContactViewController.swift */,
 				4190833727F1082800EC6331 /* CategoryTableViewController.swift */,
 				280320B527F216B50075E921 /* AboutInstrumentViewController.swift */,
+				417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417DD6F127F228EA00C6AA81 /* ListOfToolsTableViewController.swift in Sources */,
 				280320B627F216B50075E921 /* AboutInstrumentViewController.swift in Sources */,
 				28D48C7127F0813E00E116EB /* Model.swift in Sources */,
 				28D48C5C27F07E7A00E116EB /* ContactViewController.swift in Sources */,
