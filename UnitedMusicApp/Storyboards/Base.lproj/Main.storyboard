@@ -93,8 +93,8 @@
             <objects>
                 <navigationController id="vy7-IS-Hc5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bEB-f1-DC0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6fD-xF-ghr">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6fD-xF-ghr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -105,21 +105,49 @@
             </objects>
             <point key="canvasLocation" x="821.73913043478262" y="33.482142857142854"/>
         </scene>
-        <!--Item-->
+        <!--Контакты-->
         <scene sceneID="oqS-gJ-zpz">
             <objects>
-                <viewController id="HPF-W1-eRc" sceneMemberID="viewController">
+                <viewController id="HPF-W1-eRc" customClass="ContactViewController" customModule="UnitedMusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gy4-hb-VK3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="NBf-Hc-wGL">
+                                <rect key="frame" x="20" y="160" width="374" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjM-Mg-5JC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-Io-Exq">
+                                        <rect key="frame" x="0.0" y="91.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vOE-ht-qlz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NBf-Hc-wGL" firstAttribute="top" secondItem="vOE-ht-qlz" secondAttribute="top" constant="20" id="Hkw-lu-49D"/>
+                            <constraint firstItem="NBf-Hc-wGL" firstAttribute="leading" secondItem="vOE-ht-qlz" secondAttribute="leading" constant="20" id="W9I-Cy-Smt"/>
+                            <constraint firstItem="vOE-ht-qlz" firstAttribute="trailing" secondItem="NBf-Hc-wGL" secondAttribute="trailing" constant="20" id="bDx-CP-ydP"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NYR-KM-h0u"/>
+                    <navigationItem key="navigationItem" title="Контакты" id="oyh-7R-EYO"/>
+                    <connections>
+                        <outlet property="adressContact" destination="WiB-Io-Exq" id="cf0-XA-wy9"/>
+                        <outlet property="contactTitle" destination="XjM-Mg-5JC" id="Tp7-UJ-4sr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY6-u2-u2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="777"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="776.78571428571422"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Zh-Wb-CLV">
@@ -133,12 +161,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="vy7-IS-Hc5" kind="relationship" relationship="viewControllers" id="EaY-Wq-bWp"/>
-                        <segue destination="HPF-W1-eRc" kind="relationship" relationship="viewControllers" id="qVC-jU-AH3"/>
+                        <segue destination="xMq-eH-sF9" kind="relationship" relationship="viewControllers" id="qVC-jU-AH3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMe-8v-XXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-261" y="421"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="KtW-nW-6Xh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xMq-eH-sF9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NYR-KM-h0u"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mcr-Gi-KnH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HPF-W1-eRc" kind="relationship" relationship="rootViewController" id="mri-KJ-1ZO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STK-CY-JA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="776.78571428571422"/>
         </scene>
     </scenes>
     <resources>
