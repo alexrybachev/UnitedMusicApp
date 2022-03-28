@@ -9,11 +9,13 @@ import UIKit
 
 class AboutInstrumentViewController: UIViewController {
     
+    // MARK: - Outlets
     @IBOutlet var instrumentCost: UILabel!
     @IBOutlet var instrumentImage: UIImageView!
     @IBOutlet var instrumentTitle: UILabel!
     @IBOutlet var instrumentDescription: UILabel!
     
+    // MARK: = Properties
     var instrument: Instrument!
 
     override func viewDidLoad() {

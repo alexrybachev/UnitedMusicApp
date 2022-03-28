@@ -9,10 +9,12 @@ import UIKit
 
 class ContactViewController: UIViewController {
 
+    // MARK: - Outlets
     @IBOutlet var contactTitle: UILabel!
     @IBOutlet var adressContact: UILabel!
     
-    let contact = Contact.getContact()
+    // MARK: - Private Properties
+    private let contact = Contact.getContact()
     
     override func viewDidLoad() {
         super.viewDidLoad()
