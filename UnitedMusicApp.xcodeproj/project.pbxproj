@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280320B627F216B50075E921 /* AboutInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280320B527F216B50075E921 /* AboutInstrumentViewController.swift */; };
 		28D48C5827F07E7A00E116EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C5727F07E7A00E116EB /* AppDelegate.swift */; };
 		28D48C5A27F07E7A00E116EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C5927F07E7A00E116EB /* SceneDelegate.swift */; };
 		28D48C5C27F07E7A00E116EB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C5B27F07E7A00E116EB /* ContactViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280320B527F216B50075E921 /* AboutInstrumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutInstrumentViewController.swift; sourceTree = "<group>"; };
 		28D48C5427F07E7A00E116EB /* UnitedMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitedMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D48C5727F07E7A00E116EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D48C5927F07E7A00E116EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,8 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				28D48C5B27F07E7A00E116EB /* ContactViewController.swift */,
-				28D48C5B27F07E7A00E116EB /* ViewController.swift */,
 				4190833727F1082800EC6331 /* CategoryTableViewController.swift */,
+				280320B527F216B50075E921 /* AboutInstrumentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280320B627F216B50075E921 /* AboutInstrumentViewController.swift in Sources */,
 				28D48C7127F0813E00E116EB /* Model.swift in Sources */,
 				28D48C5C27F07E7A00E116EB /* ContactViewController.swift in Sources */,
 				28D48C6F27F0813400E116EB /* DataManager.swift in Sources */,
