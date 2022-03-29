@@ -9,23 +9,14 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
     
+    // MARK: - Private Properties
     private let categoryList = Catalog.getCatalog()
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-
-    }
-
     // MARK: - Table view data source
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         categoryList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
         let category = categoryList[indexPath.row]
@@ -47,18 +38,12 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let instrument = categoryList[indexPath.row].instrument
         performSegue(withIdentifier: "showInstrument", sender: instrument)
-
-        
     }
     
-
     // MARK: - Navigation
-
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          guard let listOfToolsVC = segue.destination as? ListOfToolsTableViewController else { return }
          listOfToolsVC.instrument = sender as? [Instrument]
-
      }
-
 
 }
