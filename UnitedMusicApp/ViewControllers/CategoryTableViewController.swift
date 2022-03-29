@@ -31,12 +31,14 @@ class CategoryTableViewController: UITableViewController {
         let category = categoryList[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
-        let font = UIFont.boldSystemFont(ofSize: 18)
+        let font = UIFont.boldSystemFont(ofSize: 13)
         let attributes = [NSAttributedString.Key.font: font]
         content.attributedText = NSAttributedString(string: category.category, attributes: attributes)
         
 //        content.text = category.category
-        content.secondaryText = String(category.instrument.count)
+        content.secondaryText = category.instrument.count == 1
+            ? "0"
+            : String(category.instrument.count)
         cell.contentConfiguration = content
         
         return cell
@@ -54,7 +56,8 @@ class CategoryTableViewController: UITableViewController {
 
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
          guard let listOfToolsVC = segue.destination as? ListOfToolsTableViewController else { return }
-         listOfToolsVC.instrument = sender as? Instrument
+         listOfToolsVC.instrument = sender as? [Instrument]
+
      }
 
 
