@@ -109,6 +109,60 @@ class DataManager {
         "AudioTechnicaATHM50XWH"
     ]
     
+    // Микшеры для DJ
+    let mixerNames = [
+        "Allen & Heath XONE:92",
+        "PLAYdifferently: MODEL 1"
+    ]
+    
+    let mixerCosts = [
+        164000,
+        325000
+    ]
+    
+    let mixerDescriptions = [
+        """
+        Профессиональный диджей-микшер. Bключает в себя: 6 входов, 2 aux send, 2 стерео выхода , booth выход , рекорд выход. 4 канальный эквалайзер, VCA фейдер. Функция talkover, два выхода на наушники.
+        """,
+        """
+        MODEL 1 is a performance instrument providing new creative possibilities to artists, and empowering them to PLAYdifferently.
+
+        A mixer of uncompromising build quality, intuitive tactile controls and beautifully warm analog circuitry, MODEL 1 is engineered by Andy Rigby-Jones and co-designed by Richie Hawtin, with two years of testing, insight and refinement with artists, clubs and engineers from across the electronic music community.
+
+        MODEL 1 has a unique offering of six fully featured input channels plus two stereo returns in a small format frame. It has many features not currently available on any comparable device, such as Input pre-amplifier drive control, hybrid filter/swept bell EQ, dual cue system, dual mixer linking system, and a fully balanced Tascam DB25 connector system.
+
+        MODEL 1 is a purely analogue mixer featuring technology normally found in the finest studio consoles, such as a fully balanced mix buss, zero crossing detection for seamless filter & master EQ routing along high voltage differential power rails.
+        """
+    ]
+    
+    let mixerImage = [
+        "allen_heath_playdifferently_model_1_0",
+        "xone_92_03"
+    ]
+    
+    //Стойки, держатели, кронштейны
+    
+    let rackNames = [
+        "ADAM HALL Stands SLT 001 W",
+        "ADAM HALL Stands SLT 004"
+    ]
+    
+    let rackCosts = [
+        3700,
+        5400
+    ]
+    
+    let rackDescriptions = [
+        "Стойка для ноутбука с зажимом. Цвет белый",
+        "Стойка для ноутбука"
+    ]
+    
+    let rackImage = [
+        "75e99bc666c15fa1ac5ce4b75ed09902",
+        "8a0f75f26f0a0d92994e4b1bef7255a6"
+    ]
+    
+    
     // Контакты
     let contactsTitle = "UNITED MUSIC - Поставщик музыкальных инструментов и оборудования, работаем в России, Беларуси, Литве и Украине. Быстрая доставка товаров по всему миру."
     let contactAdress = """

@@ -37,7 +37,19 @@ extension Catalog {
             case 1:
                 let item = Catalog(
                     category: DataManager.shared.categories[index],
-                    instrument: Instrument.getHeadphoness()
+                    instrument: Instrument.getHeadphones()
+                )
+                catalog.append(item)
+            case 2:
+                let item = Catalog(
+                    category: DataManager.shared.categories[index],
+                    instrument: Instrument.getMixers()
+                )
+                catalog.append(item)
+            case 3:
+                let item = Catalog(
+                    category: DataManager.shared.categories[index],
+                    instrument: Instrument.gatRacks()
                 )
                 catalog.append(item)
             default:
@@ -77,9 +89,9 @@ extension Instrument {
         return instruments
     }
     
-    static func getHeadphoness() -> [Instrument] {
+    static func getHeadphones() -> [Instrument] {
         var instruments: [Instrument] = []
-        let iterations = DataManager.shared.microphoneNames.count - 1
+        let iterations = DataManager.shared.headphoneNames.count - 1
         
         for index in 0...iterations {
             let headphone = Instrument(
@@ -94,17 +106,50 @@ extension Instrument {
         
         return instruments
     }
+    
+    static func getMixers() -> [Instrument] {
+        var instruments: [Instrument] = []
+        let iterations = DataManager.shared.mixerNames.count - 1
+        
+        for index in 0...iterations {
+            let mixer = Instrument(
+                name: DataManager.shared.mixerNames[index],
+                cost: DataManager.shared.mixerCosts[index],
+                description: DataManager.shared.mixerDescriptions[index],
+                image: DataManager.shared.mixerImage[index]
+            )
+            
+            instruments.append(mixer)
+        }
+        
+        return instruments
+    }
+    
+    static func gatRacks() -> [Instrument] {
+        var instruments: [Instrument] = []
+        let iterations = DataManager.shared.rackNames.count - 1
+        
+        for index in 0...iterations {
+            let rack = Instrument(
+                name: DataManager.shared.rackNames[index],
+                cost: DataManager.shared.rackCosts[index],
+                description: DataManager.shared.rackDescriptions[index],
+                image: DataManager.shared.rackImage[index]
+            )
+            
+            instruments.append(rack)
+        }
+        return instruments
+    }
 }
 
 // Contacts
-
 struct Contact {
     let title: String
     let adress: String
 }
 
 extension Contact {
-    
     static func getContact() -> Contact {
         Contact(
             title: DataManager.shared.contactsTitle,
@@ -112,5 +157,7 @@ extension Contact {
         )
     }
 }
+
+
 
 
