@@ -31,25 +31,34 @@ class CategoryTableViewController: UITableViewController {
         let category = categoryList[indexPath.row]
         var content = cell.defaultContentConfiguration()
         
-        let font = UIFont.boldSystemFont(ofSize: 18)
+        let font = UIFont.boldSystemFont(ofSize: 13)
         let attributes = [NSAttributedString.Key.font: font]
         content.attributedText = NSAttributedString(string: category.category, attributes: attributes)
         
 //        content.text = category.category
-        content.secondaryText = String(category.instrument.count)
+        content.secondaryText = category.instrument.count == 1
+            ? "0"
+            : String(category.instrument.count)
         cell.contentConfiguration = content
         
         return cell
     }
     
-    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let instrument = categoryList[indexPath.row].instrument
+        performSegue(withIdentifier: "showInstrument", sender: instrument)
+
+        
+    }
+    
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         guard let listOfToolsVC = segue.destination as? ListOfToolsTableViewController else { return }
+         listOfToolsVC.instrument = sender as? [Instrument]
+
+     }
+
 
 }
