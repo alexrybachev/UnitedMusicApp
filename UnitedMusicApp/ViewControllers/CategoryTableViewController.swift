@@ -26,7 +26,6 @@ class CategoryTableViewController: UITableViewController {
         let attributes = [NSAttributedString.Key.font: font]
         content.attributedText = NSAttributedString(string: category.category, attributes: attributes)
         
-//        content.text = category.category
         content.secondaryText = category.instrument.count == 1
             ? "0"
             : String(category.instrument.count)
@@ -45,5 +44,4 @@ class CategoryTableViewController: UITableViewController {
          guard let listOfToolsVC = segue.destination as? ListOfToolsTableViewController else { return }
          listOfToolsVC.instrument = sender as? [Instrument]
      }
-
 }
