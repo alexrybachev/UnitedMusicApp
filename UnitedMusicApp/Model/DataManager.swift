@@ -184,6 +184,7 @@ class DataManager {
     
     
     // Контакты
+    let logoImage = "logo_background"
     let contactsTitle = "UNITED MUSIC - Поставщик музыкальных инструментов и оборудования, работаем в России, Беларуси, Литве и Украине. Быстрая доставка товаров по всему миру."
     let contactAdress = """
     ШОУРУМ В МОСКВЕ:
