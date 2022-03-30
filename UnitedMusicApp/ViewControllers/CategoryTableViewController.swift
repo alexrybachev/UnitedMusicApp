@@ -26,9 +26,7 @@ class CategoryTableViewController: UITableViewController {
         let attributes = [NSAttributedString.Key.font: font]
         content.attributedText = NSAttributedString(string: category.category, attributes: attributes)
         
-        content.secondaryText = category.instrument.count == 1
-            ? "0"
-            : String(category.instrument.count)
+        content.secondaryText = String(category.instrument.count)
         cell.contentConfiguration = content
         
         return cell

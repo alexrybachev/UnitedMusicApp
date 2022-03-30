@@ -91,7 +91,7 @@
         <!--About Instrument View Controller-->
         <scene sceneID="XDh-k9-Lxb">
             <objects>
-                <viewController id="bqB-rT-R0y" customClass="AboutInstrumentViewController" customModule="UnitedMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="bqB-rT-R0y" customClass="AboutInstrumentViewController" customModule="UnitedMusicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v6v-Kd-Q6B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
