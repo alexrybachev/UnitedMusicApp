@@ -185,13 +185,15 @@ extension Instrument {
 struct Contact {
     let title: String
     let adress: String
+    let image: String
 }
 
 extension Contact {
     static func getContact() -> Contact {
         Contact(
             title: DataManager.shared.contactsTitle,
-            adress: DataManager.shared.contactAdress
+            adress: DataManager.shared.contactAdress,
+            image: DataManager.shared.logoImage
         )
     }
 }
