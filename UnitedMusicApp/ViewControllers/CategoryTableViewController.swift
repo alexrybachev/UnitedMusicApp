@@ -17,7 +17,7 @@ class CategoryTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "hdFXZUS0kFU"))
-        tableView.backgroundView?.alpha = 0.4
+        tableView.backgroundView?.alpha = 0.7
         tableView.backgroundView?.contentMode = .scaleAspectFill
     }
     

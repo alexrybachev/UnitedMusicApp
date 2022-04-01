@@ -18,7 +18,7 @@ class ListOfToolsTableViewController: UITableViewController {
         tableView.rowHeight = 80
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "r_fRaZf82fY"))
-        tableView.backgroundView?.alpha = 0.4
+        tableView.backgroundView?.alpha = 0.7
         tableView.backgroundView?.contentMode = .right
     }
     
