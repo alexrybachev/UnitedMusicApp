@@ -21,7 +21,7 @@ class AboutInstrumentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        instrumentImage.layer.cornerRadius = 10
         instrumentImage.image = UIImage(named: instrument.image)
         instrumentCost.text = "\(instrument.cost) ₽"
         orderButton.layer.cornerRadius = 10

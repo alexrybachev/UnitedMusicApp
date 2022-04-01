@@ -12,6 +12,15 @@ class CategoryTableViewController: UITableViewController {
     // MARK: - Private Properties
     private let categoryList = Catalog.getCatalog()
     
+    // MARK: - Override Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "hdFXZUS0kFU"))
+        tableView.backgroundView?.alpha = 0.4
+        tableView.backgroundView?.contentMode = .scaleAspectFill
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         categoryList.count

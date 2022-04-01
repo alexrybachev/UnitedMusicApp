@@ -16,6 +16,10 @@ class ListOfToolsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
+        
+        tableView.backgroundView = UIImageView(image: UIImage(named: "r_fRaZf82fY"))
+        tableView.backgroundView?.alpha = 0.4
+        tableView.backgroundView?.contentMode = .right
     }
     
     // MARK: - Table view data source
