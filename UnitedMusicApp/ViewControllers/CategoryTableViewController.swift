@@ -12,6 +12,8 @@ class CategoryTableViewController: UITableViewController {
     // MARK: - Private Properties
     private let categoryList = Catalog.getCatalog()
     
+    
+    
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,7 @@ class CategoryTableViewController: UITableViewController {
         tableView.backgroundView?.alpha = 0.7
         tableView.backgroundView?.contentMode = .scaleAspectFill
     }
+    
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
