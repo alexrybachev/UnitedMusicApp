@@ -121,7 +121,8 @@
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Заказ"/>
                                                         <connections>
-                                                            <segue destination="Mr0-32-Oci" kind="show" id="MoK-3Z-UIH"/>
+                                                            <action selector="makeAnOrder" destination="bqB-rT-R0y" eventType="touchUpInside" id="exP-LO-2NW"/>
+                                                            <segue destination="Mr0-32-Oci" kind="show" identifier="openOrderVC" id="7xZ-X6-HYx"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HP-Pj-AWa">
@@ -203,8 +204,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mVQltF9csGo-1" translatesAutoresizingMaskIntoConstraints="NO" id="NBp-LN-Hdw">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zZy-q4-JRs">
-                                <rect key="frame" x="16" y="167" width="288" height="136"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zZy-q4-JRs">
+                                <rect key="frame" x="16" y="213" width="288" height="132"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-Y5-iQW">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
@@ -215,7 +216,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quB-b5-ysz">
-                                        <rect key="frame" x="0.0" y="50" width="288" height="36"/>
+                                        <rect key="frame" x="0.0" y="48" width="288" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                         <connections>
@@ -223,7 +224,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CGG-w2-Oi4">
-                                        <rect key="frame" x="0.0" y="100" width="288" height="36"/>
+                                        <rect key="frame" x="0.0" y="96" width="288" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="send"/>
                                         <connections>
@@ -243,10 +244,10 @@
                                     <segue destination="cbl-bj-1dR" kind="presentation" id="Dl3-9E-fp5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-kx-4eL">
-                                <rect key="frame" x="16" y="91" width="288" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-kx-4eL">
+                                <rect key="frame" x="16" y="91" width="288" height="19.5"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -264,7 +265,7 @@
                             <constraint firstItem="smJ-RT-DAA" firstAttribute="trailing" secondItem="WOW-0J-fA3" secondAttribute="trailing" constant="16" id="Wpn-ha-WKO"/>
                             <constraint firstItem="smJ-RT-DAA" firstAttribute="trailing" secondItem="3ji-kx-4eL" secondAttribute="trailing" constant="16" id="cIP-LN-5rI"/>
                             <constraint firstItem="NBp-LN-Hdw" firstAttribute="trailing" secondItem="smJ-RT-DAA" secondAttribute="trailing" id="dno-p9-qbP"/>
-                            <constraint firstItem="zZy-q4-JRs" firstAttribute="centerY" secondItem="smJ-RT-DAA" secondAttribute="centerY" constant="-70" id="p0v-Xf-YVm"/>
+                            <constraint firstItem="zZy-q4-JRs" firstAttribute="centerY" secondItem="smJ-RT-DAA" secondAttribute="centerY" constant="-26" id="p0v-Xf-YVm"/>
                             <constraint firstItem="smJ-RT-DAA" firstAttribute="trailing" secondItem="zZy-q4-JRs" secondAttribute="trailing" constant="16" id="rrr-cQ-KXU"/>
                             <constraint firstItem="NBp-LN-Hdw" firstAttribute="leading" secondItem="smJ-RT-DAA" secondAttribute="leading" id="z9Y-ba-xGz"/>
                         </constraints>
@@ -272,6 +273,7 @@
                     <navigationItem key="navigationItem" id="zOz-Db-bmF"/>
                     <connections>
                         <outlet property="emailTextField" destination="quB-b5-ysz" id="Dia-Hp-BW2"/>
+                        <outlet property="infoLabel" destination="3ji-kx-4eL" id="9mT-J1-sC5"/>
                         <outlet property="nameTextField" destination="XHZ-Y5-iQW" id="Ktr-mD-IG1"/>
                         <outlet property="numberPhoneTextField" destination="CGG-w2-Oi4" id="09c-Kb-bpR"/>
                         <outlet property="orderButton" destination="WOW-0J-fA3" id="zcb-t5-XW8"/>
@@ -481,6 +483,9 @@
         <image name="mVQltF9csGo-1" width="1920" height="1440"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
         <image name="yOga94TM8Ro" width="1920" height="1439"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
