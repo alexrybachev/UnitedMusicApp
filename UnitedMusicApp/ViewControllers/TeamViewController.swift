@@ -18,9 +18,5 @@ class TeamViewController: UIViewController {
         Александр Рыбачев
         Александр Барабаш
         """
-
     }
-    
-
-
 }
