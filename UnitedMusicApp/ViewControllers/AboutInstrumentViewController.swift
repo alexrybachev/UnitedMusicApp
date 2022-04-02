@@ -18,6 +18,12 @@ class AboutInstrumentViewController: UIViewController {
     
     // MARK: = Properties
     var instrument: Instrument!
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let orderVC = segue.destination as? OrderViewController else { return }
+        orderVC.info = instrument.name
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,5 +33,9 @@ class AboutInstrumentViewController: UIViewController {
         orderButton.layer.cornerRadius = 10
         instrumentTitle.text = instrument.name
         instrumentDescription.text = instrument.description
+    }
+    
+    @IBAction func makeAnOrder() {
+//        performSegue(withIdentifier: "openOrderVC", sender: nil)
     }
 }

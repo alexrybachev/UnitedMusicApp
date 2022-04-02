@@ -9,17 +9,31 @@ import UIKit
 
 class OrderViewController: UIViewController {
 
+    @IBOutlet var infoLabel: UILabel!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var numberPhoneTextField: UITextField!
     @IBOutlet var orderButton: UIButton!
     
+    // MARK: = Properties
+    var info = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        infoLabel.layer.cornerRadius = 10
+        infoLabel.layer.masksToBounds = true
         orderButton.layer.cornerRadius = 10
+        infoLabel.text = """
+        "Уважаемый клиент!
+        Вы выбрали \(info).
+        Для оформления заказа заполните свои данные.
+        Спасибо!
+"""
+        
     }
     
+    // MARK: IBActions
     @IBAction func submitForOrder() {
         if nameTextField.text == "" {
             showAlert(title: "", message: "Введите Вашу Фамилию и Имя")
