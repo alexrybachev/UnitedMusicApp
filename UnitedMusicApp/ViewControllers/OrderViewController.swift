@@ -24,40 +24,31 @@ class OrderViewController: UIViewController {
         infoLabel.layer.cornerRadius = 10
         infoLabel.layer.masksToBounds = true
         orderButton.layer.cornerRadius = 10
-        infoLabel.text = """
-        "Уважаемый клиент!
-        Вы выбрали \(info).
-        Для оформления заказа заполните свои данные.
-        Спасибо!
-        """
+        infoLabel.text = "Для заказа просим заполнить информацию: "
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        infoVC.personName = nameTextField.text
+        infoVC.personEmail = emailTextField.text
+        infoVC.personPhone = numberPhoneTextField.text
     }
     
     // MARK: IBActions
     @IBAction func submitForOrder() {
-        if nameTextField.text == "" {
-            showAlert(title: "", message: "Введите Вашу Фамилию и Имя")
-        } else if emailTextField.text == "" {
-            showAlert(title: "", message: "Введите Ваш e-mail")
-        } else if numberPhoneTextField.text == "" {
-            showAlert(title: "", message: "Введите Ваш номер телефона")
-        } else {
+        if nameTextField.text == nil || nameTextField.text == "" {
+            showAlert(title: "", message: "Введите Вашу Фамилию и Имя", textField: nameTextField)
+            return
+        } else if emailTextField.text == nil || emailTextField.text == "" {
+            showAlert(title: "", message: "Введите Ваш e-mail", textField: emailTextField)
+            return
+        } else if numberPhoneTextField.text == nil || numberPhoneTextField.text == "" {
+            showAlert(title: "", message: "Введите Ваш номер телефона", textField: numberPhoneTextField)
             return
         }
+        performSegue(withIdentifier: "openInfoVC", sender: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }
 
 // MARK: - Alert Controller
@@ -71,10 +62,7 @@ extension OrderViewController {
         present(alert, animated: true)
     }
     
-    @objc private func didTapDone() {
-        view.endEditing(true)
-    }
-} 
+}
 
 // MARK: - UITextFieldDelegate
 extension OrderViewController: UITextFieldDelegate {
@@ -102,6 +90,10 @@ extension OrderViewController: UITextFieldDelegate {
         )
         
         keyboardToolbar.items = [flexBarButton, doneButton]
+    }
+    
+    @objc private func didTapDone() {
+        view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
