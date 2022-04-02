@@ -29,7 +29,7 @@ class OrderViewController: UIViewController {
         Вы выбрали \(info).
         Для оформления заказа заполните свои данные.
         Спасибо!
-"""
+        """
         
     }
     

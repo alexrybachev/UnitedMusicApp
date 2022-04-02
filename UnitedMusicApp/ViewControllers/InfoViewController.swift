@@ -15,6 +15,7 @@ class InfoViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet var personInfoLabel: UILabel!
+    @IBOutlet var understandably: UIButton!
     
     // MARK: - Private Properties
     private var personName: String!
@@ -24,6 +25,10 @@ class InfoViewController: UIViewController {
     // MARK: - View Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        personInfoLabel.layer.cornerRadius = 10
+        personInfoLabel.layer.masksToBounds = true
+        understandably.layer.cornerRadius = 10
         
         personInfoLabel.text = """
         Уважаемый \(personName ?? "")!
