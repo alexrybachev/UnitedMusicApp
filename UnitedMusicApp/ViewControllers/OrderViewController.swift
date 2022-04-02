@@ -18,8 +18,6 @@ class OrderViewController: UIViewController {
         super.viewDidLoad()
         
         orderButton.layer.cornerRadius = 10
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func submitForOrder() {
@@ -92,4 +90,14 @@ extension OrderViewController: UITextFieldDelegate {
         keyboardToolbar.items = [flexBarButton, doneButton]
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameTextField {
+            emailTextField.becomeFirstResponder()
+        } else if textField == emailTextField {
+            numberPhoneTextField.becomeFirstResponder()
+        } else {
+            submitForOrder()
+        }
+        return true
+    }
 }
