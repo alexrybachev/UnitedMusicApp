@@ -20,6 +20,7 @@
 		417DD6F127F228EA00C6AA81 /* ListOfToolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */; };
 		4190833827F1082800EC6331 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190833727F1082800EC6331 /* CategoryTableViewController.swift */; };
 		41C54EBF27F85FBB003E0429 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C54EBE27F85FBB003E0429 /* InfoViewController.swift */; };
+		41C54EC127F8C765003E0429 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C54EC027F8C765003E0429 /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfToolsTableViewController.swift; sourceTree = "<group>"; };
 		4190833727F1082800EC6331 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		41C54EBE27F85FBB003E0429 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		41C54EC027F8C765003E0429 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */,
 				4179AE1027F6F6DB00D7C7F6 /* OrderViewController.swift */,
 				41C54EBE27F85FBB003E0429 /* InfoViewController.swift */,
+				41C54EC027F8C765003E0429 /* TeamViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				28D48C5827F07E7A00E116EB /* AppDelegate.swift in Sources */,
 				28D48C5A27F07E7A00E116EB /* SceneDelegate.swift in Sources */,
 				4190833827F1082800EC6331 /* CategoryTableViewController.swift in Sources */,
+				41C54EC127F8C765003E0429 /* TeamViewController.swift in Sources */,
 				4179AE1127F6F6DB00D7C7F6 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
