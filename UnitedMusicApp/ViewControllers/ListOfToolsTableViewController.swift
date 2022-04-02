@@ -21,7 +21,6 @@ class ListOfToolsTableViewController: UITableViewController {
         tableView.backgroundView?.alpha = 0.7
         tableView.backgroundView?.contentMode = .right
         
-        
     }
     
     // MARK: - Table view data source

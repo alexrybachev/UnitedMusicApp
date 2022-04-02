@@ -35,7 +35,4 @@ class AboutInstrumentViewController: UIViewController {
         instrumentDescription.text = instrument.description
     }
     
-    @IBAction func makeAnOrder() {
-//        performSegue(withIdentifier: "openOrderVC", sender: nil)
-    }
 }
