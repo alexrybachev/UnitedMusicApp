@@ -7,23 +7,37 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+protocol OrderViewControllerDelegate {
+    func getPersonalInfo(name: String, email: String, phone: String)
+}
 
+class InfoViewController: UIViewController {
+    
+    // MARK: - IBOutlets
+    @IBOutlet var personInfoLabel: UILabel!
+    
+    // MARK: - Private Properties
+    private var personName: String!
+    private var personEmail: String!
+    private var personPhone: String!
+    
+    // MARK: - View Life Circle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        personInfoLabel.text = """
+        Уважаемый \(personName ?? "")!
+        В ближайшее время мы с вами свяжемся по указанным Вами контактам \(personEmail ?? "") или \(personPhone ?? "").
+        Спасибо за заказ!
+        """
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// MARK: - OrderViewControllerDelegate
+extension InfoViewController: OrderViewControllerDelegate {
+    func getPersonalInfo(name: String, email: String, phone: String) {
+        personName = name
+        personEmail = email
+        personPhone = phone
     }
-    */
-
 }

@@ -54,4 +54,7 @@ class CategoryTableViewController: UITableViewController {
          guard let listOfToolsVC = segue.destination as? ListOfToolsTableViewController else { return }
          listOfToolsVC.instrument = sender as? [Instrument]
      }
+    
+    // MARK: - IBActions
+    @IBAction func unwind(for segue: UIStoryboardSegue) {}
 }
