@@ -294,8 +294,8 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrj-34-NT7">
                                 <rect key="frame" x="16" y="184" width="288" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pv-mj-roE">
@@ -304,6 +304,9 @@
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Понятненько!"/>
+                                <connections>
+                                    <segue destination="Cpv-yK-RAK" kind="unwind" unwindAction="unwindFor:" id="Bbu-lF-O9H"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2yc-s3-mVA"/>
@@ -322,8 +325,12 @@
                             <constraint firstAttribute="bottom" secondItem="Xqg-QV-eHD" secondAttribute="bottom" id="wyo-dd-fKc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="personInfoLabel" destination="Vrj-34-NT7" id="Qs6-Mq-dYU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a95-zh-Gbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Cpv-yK-RAK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5029.9065420560746" y="31.749460043196546"/>
         </scene>
