@@ -16,8 +16,10 @@
 		28D48C6427F07E7C00E116EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D48C6227F07E7C00E116EB /* LaunchScreen.storyboard */; };
 		28D48C6F27F0813400E116EB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C6E27F0813400E116EB /* DataManager.swift */; };
 		28D48C7127F0813E00E116EB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D48C7027F0813E00E116EB /* Model.swift */; };
+		4179AE1127F6F6DB00D7C7F6 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179AE1027F6F6DB00D7C7F6 /* OrderViewController.swift */; };
 		417DD6F127F228EA00C6AA81 /* ListOfToolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */; };
 		4190833827F1082800EC6331 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4190833727F1082800EC6331 /* CategoryTableViewController.swift */; };
+		41C54EBF27F85FBB003E0429 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C54EBE27F85FBB003E0429 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +34,10 @@
 		28D48C6527F07E7C00E116EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28D48C6E27F0813400E116EB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		28D48C7027F0813E00E116EB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4179AE1027F6F6DB00D7C7F6 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfToolsTableViewController.swift; sourceTree = "<group>"; };
 		4190833727F1082800EC6331 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		41C54EBE27F85FBB003E0429 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				4190833727F1082800EC6331 /* CategoryTableViewController.swift */,
 				280320B527F216B50075E921 /* AboutInstrumentViewController.swift */,
 				417DD6F027F228EA00C6AA81 /* ListOfToolsTableViewController.swift */,
+				4179AE1027F6F6DB00D7C7F6 /* OrderViewController.swift */,
+				41C54EBE27F85FBB003E0429 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,10 +187,12 @@
 				280320B627F216B50075E921 /* AboutInstrumentViewController.swift in Sources */,
 				28D48C7127F0813E00E116EB /* Model.swift in Sources */,
 				28D48C5C27F07E7A00E116EB /* ContactViewController.swift in Sources */,
+				41C54EBF27F85FBB003E0429 /* InfoViewController.swift in Sources */,
 				28D48C6F27F0813400E116EB /* DataManager.swift in Sources */,
 				28D48C5827F07E7A00E116EB /* AppDelegate.swift in Sources */,
 				28D48C5A27F07E7A00E116EB /* SceneDelegate.swift in Sources */,
 				4190833827F1082800EC6331 /* CategoryTableViewController.swift in Sources */,
+				4179AE1127F6F6DB00D7C7F6 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +340,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CMB6GH46SU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnitedMusicApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "United Music";
@@ -365,7 +373,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CMB6GH46SU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnitedMusicApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "United Music";
